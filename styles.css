@@ -64,6 +64,7 @@ body {
     color: white;
     padding: 8rem 0;
     text-align: center;
+    display: none;
 }
 
 .hero h1 {
@@ -109,12 +110,13 @@ body {
 
 .about-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
 }
 
 .about-image {
     flex: 0 0 300px;
+    text-align: center;
 }
 
 .about-image img {
@@ -122,15 +124,52 @@ body {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+}
+
+.about-image h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.about-image .tagline {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.social-links-about {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-links-about a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.social-links-about a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
     flex: 1;
 }
 
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: #2c3e50;
 }
 
