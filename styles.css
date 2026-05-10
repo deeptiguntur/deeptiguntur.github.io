@@ -421,7 +421,7 @@ strong { color: var(--text); font-weight: 600; }
   object-fit: contain; background: white;
   flex-shrink: 0; display: block;
 }
-.pub-inst-divider { font-family: var(--mono); font-size: 0.9rem; color: var(--text-3); }
+.pub-inst-divider { font-family: var(--mono); font-size: 0.9rem; color: var(--text-2); }
 
 .pub-abstract {
   font-size: 0.85rem; color: var(--text-2); line-height: 1.75;
