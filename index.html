@@ -1,209 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepti Guntur - Developer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Software & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,700;1,300;1,600&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Deepti Guntur</div>
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link">About Me</a></li>
-                <li><a href="#experience" class="nav-link">Work Experience</a></li>
-                <li><a href="#papers" class="nav-link">Papers</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-            </ul>
-        </div>
+
+  <!-- NAV -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="#about" class="nav-brand">Deepti Guntur<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Deepti Guntur</h1>
-            <p>Full-Stack Developer | Creative Problem Solver</p>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h1 class="hero-name"><em>Hi, I'm</em><br>Deepti Guntur</h1>
+      </div>
+      <div class="about-grid">
+        <!-- LEFT: photo + links -->
+        <div class="about-photo-wrap">
+          <img src="https://drive.google.com/thumbnail?id=1lWb0ssIpKPZjclcE7pUaH-ms8_iuloOe&sz=w1000" alt="Deepti Guntur" class="about-photo" />
+          <div class="about-links">
+            <a href="https://github.com/deeptiguntur" target="_blank" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+              </svg>
+              <span class="link-label">GitHub</span>
+            </a>
+
+            <a href="https://linkedin.com/in/deeptiguntur" target="_blank" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              <span class="link-label">LinkedIn</span>
+            </a>
+
+            <a href="mailto:deepti.guntur25@gmail.com" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <polyline points="2,4 12,14 22,4" />
+              </svg>
+              <span class="link-label">Email</span>
+            </a>
+          </div>
         </div>
-    </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/300x300?text=Profile+Photo" alt="Profile Photo">
-                </div>
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>I'm a passionate developer with expertise in creating elegant solutions to complex problems. With experience in both frontend and backend technologies, I love building projects that make an impact.</p>
-                    <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <h2>Deepti Guntur</h2>
-                    <p class="tagline">Full-Stack Developer | Creative Problem Solver</p>
-                    <div class="social-links-about">
-                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                        <a href="https://github.com" target="_blank">GitHub</a>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h3>About Me</h3/li>
-                    <li>HTML & CSS</li>
-                    <li>Node.js</li>
-                    <li>Database Design</li>
-                </ul>
-                    </div>
-                </div>
+        <!-- RIGHT: bio -->
+        <div class="about-text">
+          <p>I'm a <span class="text-highlight">Software Engineer</span> with <strong>4+ years</strong> of experience
+            building full-stack production systems across cloud infrastructure, modern web, and applied AI.</p>
+          <p>I enjoy building software applications and I'm particularly interested in applied AI, especially in agentic
+            systems and reasoning-based models. My focus is on designing intelligent, end-to-end systems that combine
+            strong engineering fundamentals with practical AI capabilities to solve real-world problems.</p>
+          <p>I'm especially drawn to problems that require combining machine learning with strong backend engineering
+            and system design — building software that performs at scale through distributed systems, LLM-powered
+            applications, and end-to-end AI products.</p>
+
+
+          <div class="about-badges">
+            <!-- <span class="badge badge-amber">⭐ ER&amp;D Excellence Award</span> -->
+            <a href="#publications"><span class="badge badge-green">📄 ACL 2026 Published</span></a>
+            <!-- <span class="badge badge-green">🏆 Hackathon Winner</span> -->
+            <!-- <span class="badge badge-blue">🔬 Adobe Research</span> -->
+            <!-- <span class="badge badge-green">🎓 GPA 3.91 / 4.0</span> -->
+          </div>
+
+
+          <!-- Interest chips -->
+          <div>
+            <p class="interest-head">Interests:</p>
+            <div class="interest-chips">
+              <span class="interest-chip">🌐 Full Stack Engineering</span>
+              <span class="interest-chip">☁️ Distributed Systems</span>
+              <span class="interest-chip">🧠 LLMs</span>
+              <span class="interest-chip">🤖 Agentic AI and RAG</span>
+              <span class="interest-chip">💻 Generative AI</span>
             </div>
+          </div>
         </div>
-    </section>
 
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <div class="experience-list">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Senior Developer</h3>
-                        <span class="date">2024 - Present</span>
-                    </div>
-                    <p class="company">Tech Company Name</p>
-                    <p class="description">Led development of full-stack web applications using React and Node.js. Collaborated with cross-functional teams to deliver scalable solutions.</p>
-                </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Full Stack Developer</h3>
-                        <span class="date">2022 - 2024</span>
-                    </div>
-                    <p class="company">Previous Company</p>
-                    <p class="description">Developed and maintained multiple web applications. Implemented responsive UI designs and optimized backend performance.</p>
-                </div>
+  <!-- EDUCATION -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Education</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Junior Developer</h3>
-                        <span class="date">2021 - 2022</span>
-                    </div>
-                    <p class="company">Startup Co.</p>
-                    <p class="description">Started career building web applications with modern technologies. Worked on feature development and bug fixes.</p>
-                </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="edu-logo-wrap">
+              <img src="assets/Umass-logo.png" alt="UMass Amherst" class="edu-logo" />
             </div>
-        </div>
-    </section>
-
-    <section id="papers" class="papers">
-        <div class="container">
-            <h2>Papers & Publications</h2>
-            <div class="papers-list">
-                <div class="paper-item">
-                    <h3>Research Paper Title 1</h3>
-                    <p class="paper-meta">Published in Journal Name | 2024</p>
-                    <p class="description">Brief description of your research paper. Highlight the key findings and contributions to the field.</p>
-                    <a href="#" target="_blank" class="paper-link">Read Paper</a>
+            <div class="timeline-desc">
+              <div class="tcard-header">
+                <div>
+                  <h3 class="tcard-school">University of Massachusetts Amherst</h3>
+                  <p class="tcard-degree">Master of Science in Computer Science</p>
                 </div>
-
-                <div class="paper-item">
-                    <h3>Research Paper Title 2</h3>
-                    <p class="paper-meta">Published in Conference Name | 2023</p>
-                    <p class="description">Summary of your research contribution. Explain the methodology and impact of your work.</p>
-                    <a href="#" target="_blank" class="paper-link">Read Paper</a>
-                </div>
-
-                <div class="paper-item">
-                    <h3>Research Paper Title 3</h3>
-                    <p class="paper-meta">Published in Journal Name | 2023</p>
-                    <p class="description">Overview of another significant research work. Include the abstract and main conclusions.</p>
-                    <a href="#" target="_blank" class="paper-link">Read Paper</a>
-                </div>
+                <span class="tcard-date">Sep 2023 – May 2025</span>
+              </div>
+              <div class="tcard-body">
+                <span class="tcard-gpa">GPA: 3.91 / 4.0</span>
+                <p class="tcard-detail">Coursework: Advanced NLP, Advanced Algorithms, Software Engineering, Neural
+                  Networks, Reinforcement Learning, Information Retrieval, Machine Learning, Data Science</p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1">
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Title 1</h3>
-                        <p>Brief description of your first project. Explain what problem it solves and the technologies used.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="link">View Project</a>
-                            <a href="#" target="_blank" class="link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2">
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Title 2</h3>
-                        <p>Brief description of your second project. Share the key features and technical stack.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="link">View Project</a>
-                            <a href="#" target="_blank" class="link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3">
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Title 3</h3>
-                        <p>Brief description of your third project. Highlight the most interesting aspects of the work.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">REST API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="link">View Project</a>
-                            <a href="#" target="_blank" class="link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+4" alt="Project 4">
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Title 4</h3>
-                        <p>Brief description of your fourth project. Include information about your role and contributions.</p>
-                        <div class="project-tags">
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">GraphQL</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="link">View Project</a>
-                            <a href="#" target="_blank" class="link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="edu-logo-wrap">
+              <img src="assets/VIT-logo.png" alt="VIT" class="edu-logo" />
             </div>
+            <div class="timeline-desc">
+              <div class="tcard-header">
+                <div>
+                  <h3 class="tcard-school">Vellore Institute of Technology (VIT)</h3>
+                  <p class="tcard-degree">Bachelor of Technology in Computer Science &amp; Engineering</p>
+                </div>
+                <span class="tcard-date">Jul 2016 – Jun 2020</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Deepti Guntur. All rights reserved.</p>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE (separate section) -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Career</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="exp-timeline">
+
+        <!-- UMass -->
+        <div class="exp-timeline-item reveal">
+          <div class="exp-timeline-dot"></div>
+          <div class="exp-timeline-line"></div>
+          <div class="exp-card" data-collapsible>
+            <div class="exp-top exp-toggle" role="button" tabindex="0" aria-expanded="true">
+              <div class="exp-left">
+                <h3 class="exp-company">UMass Amherst</h3>
+                <p class="exp-role">Full Stack Software Engineer</p>
+              </div>
+              <div class="exp-right-meta">
+                <span class="exp-date">Aug 2025 – Present</span>
+                <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  width="16" height="16">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </div>
+            </div>
+            <div class="exp-body">
+              <div class="exp-tech">
+                <span class="exp-chip">React</span>
+                <span class="exp-chip">Python</span>
+                <span class="exp-chip">Tailwind CSS</span>
+                <span class="exp-chip">FastAPI</span>
+                <span class="exp-chip">LangChain</span>
+                <span class="exp-chip">ChromaDB</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Designed <strong>DocWise</strong>, a full-stack AI knowledge assistant (React, Tailwind, FastAPI)
+                  with session-aware chat and real-time streaming.</li>
+                <li>Engineered async FastAPI backend with LangChain agentic RAG, ChromaDB vector search, and 4+ tool
+                  orchestration with Llama-70B.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adobe -->
+        <div class="exp-timeline-item reveal">
+          <div class="exp-timeline-dot"></div>
+          <div class="exp-timeline-line"></div>
+          <div class="exp-card" data-collapsible>
+            <div class="exp-top exp-toggle" role="button" tabindex="0" aria-expanded="true">
+              <div class="exp-left">
+                <h3 class="exp-company">Adobe <span class="exp-tag">Research</span></h3>
+                <p class="exp-role">Graduate Student Researcher</p>
+              </div>
+              <div class="exp-right-meta">
+                <span class="exp-date">Jan – May 2025</span>
+                <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  width="16" height="16">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </div>
+            </div>
+            <div class="exp-body">
+              <div class="exp-tech">
+                <span class="exp-chip">Python</span>
+                <span class="exp-chip">LangChain</span>
+                <span class="exp-chip">RAG</span>
+                <span class="exp-chip">LLM-as-a-Judge</span>
+                <span class="exp-chip">Agentic AI</span>
+                <span class="exp-chip">Vector Search</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Built Agentic RAG framework with memory cache module to reduce redundant retrievals in multi-hop
+                  reasoning.</li>
+                <li>Evaluated accuracy using LLM-as-a-Judge on standard multi-hop QA benchmarks.</li>
+                <li>~6.7% improvement in LLM-based EM; ~10.5% fewer average retrievals vs. SOTA baseline. <a
+                    href="#publications">Published at ACL 2026 SRW.</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wipro / HP Inc. -->
+        <div class="exp-timeline-item reveal">
+          <div class="exp-timeline-dot"></div>
+          <div class="exp-timeline-line"></div>
+          <div class="exp-card" data-collapsible>
+            <div class="exp-top exp-toggle" role="button" tabindex="0" aria-expanded="true">
+              <div class="exp-left">
+                <h3 class="exp-company">Wipro Technologies | HP Inc.</h3>
+                <p class="exp-role">Software Engineer</p>
+              </div>
+              <div class="exp-right-meta">
+                <span class="exp-date">Jun 2022 – Aug 2023</span>
+                <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  width="16" height="16">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </div>
+            </div>
+            <div class="exp-body">
+              <div class="exp-tech">
+                <span class="exp-chip">Python</span>
+                <span class="exp-chip">React</span>
+                <span class="exp-chip">Angular</span>
+                <span class="exp-chip">TypeScript</span>
+                <span class="exp-chip">Node.js</span>
+                <span class="exp-chip">CI/CD</span>
+                <span class="exp-chip">REST APIs</span>
+                <span class="exp-chip">AWS Lambda</span>
+                <span class="exp-chip">DynamoDB</span>
+                <span class="exp-chip">S3</span>
+                <span class="exp-chip">API Gateway</span>
+                <span class="exp-chip">CloudFront</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Led full-stack development of product catalog and admin dashboard platforms using <strong>React,
+                    Angular, and Python</strong>, supporting users across <strong>50+ countries</strong>.</li>
+                <li>Designed a distributed backend on AWS Lambda with S3 event-driven triggers and DynamoDB for
+                  scalable, high-volume data processing.</li>
+                <li>Engineered Python REST APIs with secure access controls and async processing to efficiently handle
+                  2M+ daily requests with low latency.</li>
+                <li>Built responsive UIs with multi-language support and reduced page load times by 30% through
+                  CloudFront CDN for caching static assets.</li>
+                <li>Automated CI/CD pipelines via AWS CodePipeline to streamline build and testing, cutting deployment
+                  time by ~70%.</li>
+                <li>Optimized CMS (Contentstack) workflows by building an internal tool with Node.js to automate content
+                  upload and publishing, reducing manual updates from ~15 hrs/week to ~2 hrs and publishing time by 60%.
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wipro / Veritas -->
+        <div class="exp-timeline-item reveal">
+          <div class="exp-timeline-dot"></div>
+          <div class="exp-card" data-collapsible>
+            <div class="exp-top exp-toggle" role="button" tabindex="0" aria-expanded="true">
+              <div class="exp-left">
+                <h3 class="exp-company">Wipro Technologies | Veritas</h3>
+                <p class="exp-role">Software Engineer</p>
+              </div>
+              <div class="exp-right-meta">
+                <span class="exp-date">Sep 2020 – May 2022</span>
+                <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  width="16" height="16">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </div>
+            </div>
+            <div class="exp-body">
+              <div class="exp-tech">
+                <span class="exp-chip">Java</span>
+                <span class="exp-chip">Spring Boot</span>
+                <span class="exp-chip">MySQL</span>
+                <span class="exp-chip">Angular</span>
+                <span class="exp-chip">TypeScript</span>
+                <span class="exp-chip">OAuth 2.0</span>
+                <span class="exp-chip">RBAC</span>
+                <span class="exp-chip">REST APIs</span>
+                <span class="exp-chip">Web Accessibility</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Delivered end-to-end development for an enterprise document discovery platform, improving
+                  cross-device usability and achieving WCAG AAA & Section 508 accessibility compliance.</li>
+                <li>Built accessible Angular (TypeScript) UI components supporting keyboard navigation & screen readers,
+                  reducing accessibility issues by 40%.</li>
+                <li>Developed REST APIs using Java with MySQL to support scalable document search and filtering across
+                  500K+ records.</li>
+                <li>Owned and implemented OAuth 2.0 and Role-Based Access Control (RBAC) to ensure secure authorization
+                  across 5+ user roles.</li>
+                <li>🏆 Received <strong>ER&amp;D Excellence Award FY 2022</strong> for driving exceptional code quality
+                  through code reviews, cross-team collaboration, and consistent high-impact delivery.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end exp-timeline -->
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="section section-alt" id="publications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Research</span>
+        <h2 class="section-title">Publications</h2>
+      </div>
+      <div class="pub-grid">
+        <div class="pub-card reveal">
+          <div class="pub-layout">
+
+            <!-- LEFT: image -->
+            <div class="pub-image-col">
+              <a href="https://arxiv.org/abs/2603.12396" target="_blank">
+                <img src="assets/paper_image.png" alt="Paper preview" class="pub-banner-img" />
+              </a>
+            </div>
+
+            <!-- RIGHT: content -->
+            <div class="pub-content-col">
+              <div class="pub-meta">
+                <span class="pub-venue">ACL 2026 · Student Research Workshop</span>
+                <span class="pub-badge">Peer Reviewed</span>
+              </div>
+
+              <h3 class="pub-title">Test-Time Strategies for More Efficient and Accurate Agentic RAG</h3>
+
+              <div class="pub-banner-institutions">
+                <div class="pub-inst">
+                  <img src="assets/Adobe-logo.png" alt="Adobe Research" class="pub-inst-logo" />
+                  <span>Adobe Research</span>
+                </div>
+                <div class="pub-inst-divider">×</div>
+                <div class="pub-inst">
+                  <img src="assets/Umass-logo.png" alt="UMass Amherst" class="pub-inst-logo" />
+                  <span>UMass Amherst</span>
+                </div>
+              </div>
+
+              <p class="pub-abstract">
+                Agentic Retrieval-Augmented Generation (RAG) systems iteratively retrieve and reason over external
+                documents to answer complex, multi-hop questions — but often suffer from redundant retrievals and high
+                inference cost. This paper introduces test-time strategies, including a <strong>memory cache
+                  module</strong> that reuses previously retrieved context across reasoning steps, reducing unnecessary
+                retrievals while preserving answer quality. We evaluate using <strong>LLM-as-a-Judge</strong> on
+                standard multi-hop QA benchmarks.
+              </p>
+
+              <div class="pub-results">
+                <div class="pub-result-item">
+                  <span class="pub-result-num">+6.7%</span>
+                  <span class="pub-result-label">LLM-based EM improvement</span>
+                </div>
+                <div class="pub-result-item">
+                  <span class="pub-result-num">−10.5%</span>
+                  <span class="pub-result-label">Average retrievals vs. SOTA</span>
+                </div>
+              </div>
+
+              <a href="https://arxiv.org/abs/2603.12396" target="_blank" class="pub-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15,3 21,3 21,9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                arXiv:2603.12396
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">Full Stack · Agentic RAG</span>
+          </div>
+          <h3 class="project-name">DocWise — Intelligent Knowledge Assistant</h3>
+          <p class="project-desc">AI-powered knowledge assistant built with React, FastAPI, LangChain, and ChromaDB
+            enabling intelligent document retrieval, context-aware conversational chat, and real-time streaming
+            responses.</p>
+          <div class="project-tech">
+            <span class="tech">FastAPI</span><span class="tech">React</span><span class="tech">Tailwind</span><span
+              class="tech">LangChain</span>
+          </div>
+          <a href="https://github.com/deeptiguntur/DocWise" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">AI · Education</span>
+            <!-- <span class="project-award">🏆 Best use of AI in Education — Hack(H)er413 2024</span> -->
+          </div>
+          <h3 class="project-name">AI-based Lecture Summarizer</h3>
+          <p class="project-desc">Full-stack AI-powered study assistant processing multi-modal inputs (video, audio,
+            text) through OpenAI Whisper for speech-to-text, then GPT API for structured summaries and topic-wise notes.
+          </p>
+          <span class="project-award">🏆 Best use of AI in Education — Hack(H)er413 2024</span>
+          <div class="project-tech">
+            <span class="tech">Flask</span><span class="tech">Angular</span><span class="tech">Python</span><span
+              class="tech">GPT API</span>
+          </div>
+          <a href="https://github.com/deeptiguntur/LectureSummarizer" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">Neural Networks · VLMs</span>
+          </div>
+          <h3 class="project-name">Medical Imaging Anomaly Detection</h3>
+          <p class="project-desc">CLIP-based framework with learnable text and image embeddings for anomaly detection
+            and localization across medical imaging datasets.</p>
+          <div class="project-metrics-row">
+            <div class="pm"><span class="pm-n">96.7%</span><span class="pm-l">Pixel AUROC</span></div>
+            <div class="pm"><span class="pm-n">87.7%</span><span class="pm-l">Image AP</span></div>
+          </div>
+          <div class="project-tech">
+            <span class="tech">PyTorch</span><span class="tech">CLIP</span><span class="tech">Python</span>
+          </div>
+          <a href="https://github.com/deeptiguntur/MedVMAD" class="project-link" target="_blank">View on GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Skills</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-pills">
+            <!-- <span class="pill pill-accent">Python</span> -->
+            <span class="pill">Python</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Java</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">C++</span>
+            <span class="pill">SQL</span>
+            <span class="pill">R</span>
+            <span class="pill">HTML / CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
+          <div class="skill-pills">
+            <span class="pill">React</span>
+            <span class="pill">FastAPI</span>
+            <span class="pill">LangChain</span>
+            <span class="pill">Angular</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Spring Boot</span>
+            <span class="pill">Flask</span>
+            <span class="pill">PyTorch</span>
+            <span class="pill">Tailwind CSS</span>
+            <span class="pill">Hugging Face</span>
+            <span class="pill">LangChain</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Cloud &amp; Infrastructure</h3>
+          <div class="skill-pills">
+            <span class="pill">AWS</span>
+            <span class="pill">GCP</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Kubernetes</span>
+            <span class="pill">AWS Lambda</span>
+            <span class="pill">S3</span>
+            <span class="pill">CloudFront</span>
+            <span class="pill">CodePipeline</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Databases &amp; Tools</h3>
+          <div class="skill-pills">
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">DynamoDB</span>
+            <span class="pill">ChromaDB</span>
+            <span class="pill">Git / GitHub</span>
+            <span class="pill">Jenkins</span>
+            <span class="pill">Claude Code</span>
+            <span class="pill">Copilot</span>
+            <span class="pill">Jupyter</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container container-narrow">
+      <div class="contact-inner">
+        <p class="contact-eyebrow">07 — Get in Touch</p>
+        <!-- <h2 class="contact-title">Open to <em>new roles</em></h2>
+        <p class="contact-desc">Seeking full-time positions in full-stack engineering and applied AI. Let's build something great together.</p> -->
+        <a href="mailto:deepti.guntur25@gmail.com" class="btn btn-primary btn-large">Say Hello →</a>
+        <div class="contact-links">
+          <a href="https://github.com/deeptiguntur" target="_blank" class="contact-link">GitHub</a>
+          <span class="dot">·</span>
+          <a href="https://linkedin.com/in/deeptiguntur" target="_blank" class="contact-link">LinkedIn</a>
+          <span class="dot">·</span>
+          <a href="mailto:deepti.guntur25@gmail.com" target="_blank" class="contact-link">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Deepti Guntur · All rights reserved · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
