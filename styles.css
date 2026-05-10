@@ -253,7 +253,7 @@ strong { color: var(--text); font-weight: 600; }
 /* Education logo — centered left of text */
 .edu-logo-wrap {
   flex-shrink: 0;
-  width: 64px; height: 64px;
+  width: 100px; height: 100px;
   background: white;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -262,7 +262,7 @@ strong { color: var(--text); font-weight: 600; }
   overflow: hidden;
 }
 .edu-logo {
-  width: 52px; height: 52px;
+  width: 90px; height: 90px;
   object-fit: contain; display: block;
 }
 
@@ -271,7 +271,7 @@ strong { color: var(--text); font-weight: 600; }
 .tcard-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
 .tcard-school { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
 .tcard-degree { font-size: 0.875rem; color: var(--text-2); }
-.tcard-date { font-family: var(--mono); font-size: 0.65rem; color: var(--text-3); letter-spacing: 0.06em; white-space: nowrap; padding-top: 0.2rem; }
+.tcard-date { font-family: var(--mono); font-size: 0.65rem; color: var(--text-2); letter-spacing: 0.06em; white-space: nowrap; padding-top: 0.2rem; }
 .tcard-body { margin-top: 0.75rem; }
 .tcard-gpa {
   display: inline-block; font-family: var(--mono); font-size: 0.7rem;
@@ -325,7 +325,7 @@ strong { color: var(--text); font-weight: 600; }
   /* margin-bottom: 0.2rem; */
 }
 .exp-role { font-size: 1.125rem; color: var(--text-2); }
-.exp-date { font-family: var(--mono); font-size: 0.65rem; color: var(--text-3); letter-spacing: 0.06em; white-space: nowrap; }
+.exp-date { font-family: var(--mono); font-size: 0.65rem; color: var(--text-2); letter-spacing: 0.06em; white-space: nowrap; }
 .exp-tag {
   font-family: var(--mono); font-size: 0.6rem;
   color: var(--accent); background: var(--accent-dim);
